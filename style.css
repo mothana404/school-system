@@ -129,3 +129,301 @@ span {
     justify-content: center;
     padding: 5px;
 }
+
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.col.header {
+    /* border: 1px solid; */
+    /* padding-left: 15px; */
+}
+
+.container-fluid {
+    padding: 0px !important;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 15px
+}
+/* @media only screen and (max-width: 600px) and (min-width: 400px)  {...} */
+
+@media only screen and (min-width: 990px) and (max-width: 1400px) {
+    .for-card > div {
+        border: 1px solid lightsteelblue;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 15px;
+        font-family: sans-serif;
+        gap: 5px;
+        width: 170px;
+        margin: 5px;
+        background-color: aliceblue;
+    }
+
+    .for-card > div > img {
+        margin-left: 38px;
+        width: 85px;
+        margin-bottom: 5px;
+    }
+
+    .for-card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* border: 3px solid lightblue; */
+        border-radius: 10px;
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+@media only screen and (min-width: 532px) and (max-width: 990px) {
+    .for-card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* border: 3px solid lightblue; */
+        border-radius: 10px;
+        margin: 4px;
+        padding: 4px;
+    }
+
+    .for-card > div {
+        border: 1px solid lightsteelblue;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 15px;
+        font-family: sans-serif;
+        gap: 3px;
+        width: 160px;
+        margin: 5px;
+        background-color: aliceblue;
+        font-size: 14px;
+    }
+
+    .for-card > div > img {
+        margin-left: 36px;
+        width: 80px;
+        margin-bottom: 2px;
+    }
+
+    .form {
+        background-color: #f0f0f0;
+        padding: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        left: 0%;
+    }
+}
+
+@media only screen and (min-width : 330px) and (max-width : 532px){
+    .table-container {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+
+    .for-card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* border: 3px solid lightblue; */
+        border-radius: 10px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .for-card > div > img {
+        margin-left: 22px;
+        width: 80px;
+        margin-bottom: 5px;
+    }
+
+    .for-card > div {
+        border: 1px solid lightsteelblue;
+        border-radius: 10px;
+        padding: 4px;
+        font-size: 12px;
+        font-family: sans-serif;
+        gap: 4px;
+        width: 130px;
+        margin: 4px;
+        background-color: aliceblue;
+    }
+
+    .form {
+        background-color: #f0f0f0;
+        padding: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        left: 0%;
+    }
+
+    form {
+        font-size: 15px;
+    }
+
+    .container {
+        font-size: 15px;
+    }
+
+    table.table {
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 260px) and (max-width : 330px){
+    .for-card > div {
+        border: 1px solid lightsteelblue;
+        border-radius: 10px;
+        padding: 1px;
+        font-size: 15px;
+        font-family: sans-serif;
+        gap: 0px;
+        width: 100px;
+        margin: 5px;
+        background-color: aliceblue;
+        font-size: 10px;
+    }
+
+    .for-card > div > img {
+        margin: 5px;
+        width: 60px;
+        margin-bottom: 7px;
+    }
+
+    .table-container {
+        margin-left: 0px;
+        margin-right: 5px;
+        padding: 0px;
+        font-size: 11px;
+    }
+    .form {
+        background-color: #f0f0f0;
+        padding: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        left: 0px;
+    }
+
+    form {
+        font-size: 11px;
+    }
+
+    .container {
+        font-size: 11px;
+    }
+
+    button {
+        margin: 0px !important;
+        margin-top: 10px !important;
+        height: 30px;
+        border-radius: 10px !important;
+        background-color: #d6d6d6;
+    }
+}
+
+    @media screen and (max-width : 260px){
+        .for-card > div {
+            border: 1px solid lightsteelblue;
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 11px;
+            font-family: sans-serif;
+            gap: 0px;
+            width: 63px;
+            margin: 2px;
+            background-color: aliceblue;
+            font-size: 9px;
+        }
+
+        .for-card {
+            margin: 0px;
+        }
+
+        .for-card > div > img {
+            margin-left: 0px;
+            width: 50px;
+            margin-bottom: 9px;
+        }
+
+        span {
+            display: flex;
+            flex-wrap: wrap;
+            overflow-wrap: anywhere;
+            min-height: 10px;
+            max-height: 60px;
+            border: 1px solid #9fa7ff;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 1px;
+        }
+
+        .table-container {
+            margin-left: 0px;
+            margin-right: 5px;
+            padding: 0px;
+            font-size: 8px;
+        }
+
+        a.navbar-brand {
+            font-size: 15px;
+        }
+
+        .container {
+            font-size: 8px;
+        }
+
+        .form {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            position: relative;
+            left: 0%;
+            font-size: 8px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            font-size: 17px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            font-weight: 500;
+            font-family: sans-serif;
+            font-size: 10px;
+        }
+
+        button {
+            margin: 0px !important;
+            margin-top: 5px !important;
+            height: 25px;
+            border-radius: 10px !important;
+            background-color: #d6d6d6;
+        }
+    }

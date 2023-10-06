@@ -74,5 +74,6 @@ button.addEventListener("click", (e) =>{
         card.appendChild(cardMajor);
         card.appendChild(cardGrade);
         document.querySelector(".for-card").prepend(card);
+        document.querySelector(".for-card").style = "border: 3px solid lightblue;";
     }
 });
