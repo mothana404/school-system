@@ -71,6 +71,10 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /* border: 3px solid lightblue; */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
 }
 
 .for-card > div{
@@ -80,4 +84,48 @@ form {
 
 .for-card > div > img{
     width: 50px;
+}
+
+.for-card > div {
+    border: 1px solid lightsteelblue;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+    gap: 10px;
+    width: 188px;
+    margin: 10px;
+    background-color: aliceblue;
+}
+
+select {
+    margin: 10px !important;
+}
+
+button {
+    margin: 10px !important;
+    margin-top: 20px !important;
+    height: 35px;
+    border-radius: 10px !important;
+    background-color: #d6d6d6;
+}
+
+.for-card > div > img {
+    margin-left: 33px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+span {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+    min-height: 25px;
+    max-height: 85px;
+    border: 1px solid #9fa7ff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
 }
