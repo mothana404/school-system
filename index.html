@@ -31,42 +31,42 @@
           </div>
 
           <div class="col main">
-            <div class="form">
+            <div class="table-container">
                 <table class="table">
                     <thead>
                       <tr>
                         <th scope="col">Full name</th>
                         <th scope="col">Date of birth</th>
                         <th scope="col">gender</th>
-                        <th scope="col">phone number,</th>
+                        <th scope="col">phone number</th>
                         <th scope="col">grade</th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
+                    <tbody id="theTable">
+                      <!-- <tr>
                         <th scope="row">1</th>
                         <td>Mark</td>
                         <td>Otto</td>
                         <td>@mdo</td>
                         <td>@mdo</td>
-                      </tr>
-                      <tr>
+                      </tr> -->
+                      <!-- <tr>
                         <th scope="row">2</th>
                         <td>Jacob</td>
                         <td>Thornton</td>
                         <td>@fat</td>
                         <td>@fat</td>
-                      </tr>
-                      <tr>
+                      </tr> -->
+                      <!-- <tr>
                         <th scope="row">3</th>
                         <td colspan="2">Larry the Bird</td>
                         <td>@twitter</td>
                         <td>@twitter</td>
-                      </tr>
+                      </tr> -->
                     </tbody>
                   </table>
             </div>
-
+            <div class="for-card"></div>
             <div class="form">
                 <form action="">
                     <label for="full-name">Full name</label>
@@ -79,11 +79,28 @@
                     <input type="text" name = "gender">
 
                     <label for="phone number">phone number</label>
-                    <input type="text" name = "phone number">
+                    <input type="text" name = "phone-number">
 
                     <label for="grade">grade</label>
                     <input type="text" name = "grade">
+
+                    <label for="majors">Major</label>
+                    <select name="majors">
+                        <option value="Administration">Administration</option>
+                        <option value="IT">IT</option>
+                        <option value="Science">Science</option>
+                        <option value="Art">Art</option>
+                      </select>
+                      
+                      <select name="display">
+                        <option value="table">table</option>
+                        <option value="cards">cards</option>
+                      </select>
+
+                    <button type="submit">save</button>
                 </form>
+            </div>
+
             </div>
 
           </div>
