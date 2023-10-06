@@ -14,6 +14,7 @@ let display = document.querySelector("select[name = display]");
 let button = document.querySelector("button[type = submit]");
 button.addEventListener("click", (e) =>{
     e.preventDefault();
+    document.querySelector(".for-card").style = "display: none;"
     if (display.value == "table"){
         document.querySelector(".table-container").hidden = false;
         let fullName = document.createElement("th");
@@ -74,6 +75,6 @@ button.addEventListener("click", (e) =>{
         card.appendChild(cardMajor);
         card.appendChild(cardGrade);
         document.querySelector(".for-card").prepend(card);
-        document.querySelector(".for-card").style = "border: 3px solid lightblue;";
+        document.querySelector(".for-card").style = "border: 3px solid lightblue; overflow: scroll;";
     }
 });

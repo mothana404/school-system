@@ -68,13 +68,15 @@ form {
 }
 
 .for-card {
-    display: flex;
+    display: grid;
     flex-direction: row;
     flex-wrap: wrap;
     /* border: 3px solid lightblue; */
     border-radius: 10px;
     margin: 10px;
     padding: 5px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    max-height: 352px;
 }
 
 .for-card > div{
@@ -82,19 +84,21 @@ form {
     flex-direction: column;
 }
 
-.for-card > div > img{
-    width: 50px;
+.for-card > div > img {
+    margin-left: 39px !important;
+    width: 100px;
+    margin-bottom: 5px;
 }
 
 .for-card > div {
     border: 1px solid lightsteelblue;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
     font-size: 15px;
     font-family: sans-serif;
-    gap: 10px;
+    gap: 5px;
     width: 188px;
-    margin: 10px;
+    margin: 5px;
     background-color: aliceblue;
 }
 
