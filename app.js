@@ -58,7 +58,7 @@ button.addEventListener("click", (e) =>{
         let cardMajor = document.createElement("span");
         let cardGrade = document.createElement("span");
 
-        let src = "img/Profile-Male-PNG.png";
+        let src = "img\Profile-Male-PNG.png";
         pic.src = src;
         cardname.innerHTML = fullName;
         cardDate.innerHTML = dateOfBirth;
