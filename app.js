@@ -14,7 +14,8 @@ let display = document.querySelector("select[name = display]");
 let button = document.querySelector("button[type = submit]");
 button.addEventListener("click", (e) =>{
     e.preventDefault();
-    document.querySelector(".for-card").style = "display: none;"
+    // document.querySelector(".for-card").style = "display: none;"
+    document.querySelector(".table-container").hidden = true;
     if (display.value == "table"){
         document.querySelector(".table-container").hidden = false;
         let fullName = document.createElement("th");
@@ -38,7 +39,7 @@ button.addEventListener("click", (e) =>{
         row.appendChild(grade);
         table.appendChild(row);
     }else {
-        document.querySelector(".table-container").hidden = true;
+        document.querySelector(".table-container").hidden = false;
         let fullName = document.querySelector("input[name = full-name]").value;
         let dateOfBirth = document.querySelector("input[name = Date-of-birth]").value;
         let gender = document.querySelector("input[name = gender]").value;
@@ -58,7 +59,7 @@ button.addEventListener("click", (e) =>{
         let cardMajor = document.createElement("span");
         let cardGrade = document.createElement("span");
 
-        let src = "img\Profile-Male-PNG.png";
+        let src = "/img/Profile-Male-PNG.png";
         pic.src = src;
         cardname.innerHTML = fullName;
         cardDate.innerHTML = dateOfBirth;
@@ -77,4 +78,28 @@ button.addEventListener("click", (e) =>{
         document.querySelector(".for-card").prepend(card);
         document.querySelector(".for-card").style = "border: 3px solid lightblue; overflow: scroll;";
     }
+});
+function newcard(info){
+    let carddiv = document.querySelector(".for-card");
+    let newcard = document.createElement("div");
+    newcard.innerHTML = 
+    `<img src = "img/Profile-Male-PNG.png" >
+    <span>${info[0]}</span>
+    <span>${info[1]}</span>
+    <span>${info[2]}</span>
+    <span>${info[3]}</span>
+    <span>${info[4]}</span>`;
+    carddiv.appendChild(newcard);
+}
+
+function restore(){
+    let gitData = JSON.parse(localStorage.getItem("student"));
+    console.log(gitData.length);
+    console.log(gitData);
+    for (let i = 0; i < gitData.length; i++){
+        newcard(gitData[i]);
+    }
+}
+document.addEventListener("DOMContentLoaded", () =>{
+    restore();
 });

@@ -1,3 +1,8 @@
+.old-cards {
+    border: 1px solid black;
+    height: 420px;
+}
+
 .col.header {
     padding: 0px;
 }
@@ -77,6 +82,7 @@ form {
     padding: 5px;
     grid-template-columns: auto auto auto auto auto auto auto;
     max-height: 352px;
+    overflow: scroll;
 }
 
 .for-card > div{
